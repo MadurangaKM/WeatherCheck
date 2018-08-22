@@ -4,7 +4,7 @@ import { View, StyleSheet, StatusBar } from 'react-native';
 export default class Statusbar extends Component {
   render() {
     return (
-      <View style={styles.statusbar} >
+      <View style={[styles.statusbar, { backgroundColor: this.props.backColor }]} >
         <StatusBar
            barStyle="light-content" 
         />
@@ -14,7 +14,7 @@ export default class Statusbar extends Component {
 }
 const styles = StyleSheet.create({
     statusbar: {
-        backgroundColor: '#C55D53',
+        //backgroundColor: '#8B567E',
         height: 25,
     }
 });

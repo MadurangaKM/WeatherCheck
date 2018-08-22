@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 import React, { Component } from 'react';
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, Image, View, } from 'react-native';
+import Images from '../components/Images';
 
 
 export default class Splash extends Component {
@@ -18,7 +19,7 @@ export default class Splash extends Component {
   
         <View style={styles.containerStyle}>
             <Image 
-                source={require('../img/splash_1.gif')}
+                source={Images.Spalsh}
                 //style={styles.Image}
                 style={{ flex: 1, height: undefined, width: undefined }}
             />
