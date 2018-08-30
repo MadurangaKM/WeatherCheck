@@ -6,7 +6,7 @@ import Images from '../components/Images';
 
 export default class Splash extends Component {
     componentDidMount() {
-        console.log('Splash componentDidMount');
+        //console.log('Splash componentDidMount');
         // Start counting when the page is loaded
         this.timeoutHandle = setTimeout(() => {
           //Navigate to Home screen
