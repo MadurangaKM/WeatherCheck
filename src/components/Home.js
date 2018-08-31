@@ -7,7 +7,7 @@ import Statusbar from './Statusbar';
 import Images from './Images';
 import config from '../common/config';
 import { fetchWeather } from '../components/WeatherAPI';
-import OfflineNotice from './src/components/OfflineNotice';
+import OfflineNotice from '../components/OfflineNotice';
 
 const hours = new Date().getHours();
 const isDayTime = hours > 6 && hours < 18;
@@ -72,7 +72,7 @@ export default class Splash extends Component {
   
         <View style={styles.containerStyle}>
             <Statusbar backColor={config.colors.red} />
-            <OfflineNotice />>
+            <OfflineNotice />
             
             <ImageBackground
                 style={styles.backgroundImage}
